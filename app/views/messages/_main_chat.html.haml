@@ -1,0 +1,26 @@
+.main
+  .main-header
+    .main-header__left
+      %h2.main-header__left__group
+        = @group.name
+    .menber-list
+      .menber-list__left__member
+        %h6 Menber：LIST
+        .menber-list__left__member__name
+        - @group.users.each do |user|
+          %p= user.name
+    .main-header__right__btn
+      = link_to edit_group_path(@group.id) do
+        = "Park name edit"
+
+.messages
+  = render @messages
+
+.form
+  = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'form__message', placeholder: 'Please enter the message here'
+    .form__mask
+      = f.label :image, class: 'form__mask__image' do
+        = icon('far', 'image', class: 'icon')
+        = f.file_field :image, class: 'hidden'
+    = f.submit 'Send', class: 'form__submit'

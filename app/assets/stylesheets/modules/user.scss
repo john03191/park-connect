@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header-in {
+  justify-content: space-between;
+  padding: 0 30px;
+  position: relative;
+  display: flex;
+  height: 75px;
+  .header-in__title {
+    display: flex;
+    margin: 0 20px;
+    @include title;
+  }
+  .header-in--subtitle {
+    line-height: 75px;
+    margin-left: 20px;
+    p {
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+}
+.header__list__right {
+  display: flex;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  &__login {
+    @include btn;
+    margin-right: 10px;
+  }
+}
+
+
+
+.login-title {
+  margin-top: 75px;
+  text-align: center;
+  background-image: url(green.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  h2 {
+    @include title;
+    font-size: 80px;
+    text-shadow: #FC0 1px 0 10px;
+    color: whitesmoke;
+  }
+}
+
+.account-page {
+  margin-top: 75px;
+  padding: 30px;
+  text-align: center;
+  margin: 50px auto;
+  width: 800px;
+  height: 500px;
+  background: rgba( 107, 142, 35, 0.5);
+}
+
+.fas {
+  margin: auto;
+  margin-left: 16px;
+}
+
+.field {
+  position: relative;
+  margin: 30px auto;
+  &-input__name {
+    display: flex;
+    margin-left: 120px;
+    .form__mask {
+      display: flex;
+      position: relative;
+      font-size: 1.3rem;
+      &__image {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+      #user_image {
+        display: none;
+      }
+    }
+  }
+  input[type="text"] {
+    @include input-field;
+    border: 1px solid #999;
+    &:focus {
+      border: 2px solid #ff9900;
+      outline: 0;
+    }
+  }
+  
+  input[type="email"] {
+    @include input-field;
+    border: 1px solid #999;
+    &:focus {
+      border: 2px solid #ff9900;
+      outline: 0;
+    }
+  }
+  
+  input[type="password"] {
+    @include input-field;
+    border: 1px solid #999;
+    &:focus {
+      border: 2px solid #ff9900;
+      outline: 0;
+    }
+  }
+}
+
+
+.create-btn {
+  @include btn;
+  width: 300px;
+  height: 60px;
+  }
+

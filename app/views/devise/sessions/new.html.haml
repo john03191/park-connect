@@ -1,0 +1,12 @@
+.login-title
+  %h2 Log in
+  .account-page
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field
+        .field-input
+          = f.email_field :email, autofocus: true, placeholder: 'E-Mail'
+        .field
+          .field-input
+            = f.password_field :password, autocomplete: "off", placeholder: 'Password(英数字8文字以上)'
+        .actions
+          = f.submit "Log in", class: 'create-btn'

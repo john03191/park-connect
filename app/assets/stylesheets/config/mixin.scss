@@ -1,0 +1,60 @@
+@mixin nav {
+  height: 50px;
+  width: 20%;
+  margin: 5px;
+  line-height: 50px;
+  text-align: center;
+  border: solid lightgray 2px;
+  border-radius: 5px;
+}
+
+@mixin content {
+  text-align: center;
+  width: 480px;
+  height: 100%;
+  padding: 5px;
+  line-height: 5;
+  border: solid lemonchiffon;
+}
+
+@mixin btn {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  border: solid 2px #d27d00;
+  border-radius: 4px;
+  font-weight: bold;
+  &:hover {
+    background-color: rgba(0, 100, 0, 0.5);
+    a {
+      display: block;
+      color: white;
+    }
+  }
+}
+
+@mixin title {
+  font-family: cursive;
+}
+
+@mixin input-field {
+  width: 500px;
+  height: 50px;
+}
+
+@mixin image-text__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@mixin background-image {
+  background-image: url(green.jpg);
+  background-size: cover;
+  background-position: center; 
+}

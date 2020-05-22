@@ -1,0 +1,14 @@
+.side
+  .side-header
+    .side-header__name__edit
+      = link_to new_group_path do
+        = "新規グループ作成"
+  .side-groups
+    - current_user.groups.each do |group|
+      .side-groups__group
+        = link_to group_messages_path(group) do
+          .group__name
+            %h3= group.name
+          .group__name__message
+            %p 最新のメッセージ
+            %a= group.show_last_message
