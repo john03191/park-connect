@@ -59,6 +59,10 @@ li {
     background-color: #38aef0;
     border: 0;
   }
+  .clearfix {
+    overflow: scroll;
+    height: 150px;
+  }
   &__field {
     margin-top: 30px;
     &:after {
@@ -76,6 +80,10 @@ li {
     &--right {
       float: right;
       width: 70%;
+      #group_user_ids {
+        width: 100%;
+        height: 50px;
+      }
     }
   }
 }

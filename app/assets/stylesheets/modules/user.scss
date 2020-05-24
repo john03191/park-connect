@@ -43,7 +43,7 @@
   background-image: url(green.jpg);
   background-size: cover;
   background-position: center;
-  height: 800px;
+  height: 100%;
   h2 {
     @include title;
     font-size: 80px;
@@ -58,7 +58,7 @@
   text-align: center;
   margin: 50px auto;
   width: 800px;
-  height: 500px;
+  height: 80%;
   background: rgba( 107, 142, 35, 0.5);
 }
 
