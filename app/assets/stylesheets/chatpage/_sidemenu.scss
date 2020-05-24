@@ -19,15 +19,16 @@ a {
     height: 200px;
     width: 200px;
     font-weight: bold;
-    background-color: rgba( 0, 100, 0, 0.6);
+    background-image: url(flower.jpg);
     position: relative;
+    border-radius: 10px;
     &__name__edit {
       line-height: 70px;
       width: 150px;
       @include image-text__center;
       a {
         @include btn;
-        background-color: rgba( 245, 245, 245, 1);
+        background-color: rgba( 245, 245, 245, 0.6);
         &:hover {
           color: white;
         }

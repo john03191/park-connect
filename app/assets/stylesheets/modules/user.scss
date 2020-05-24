@@ -116,6 +116,14 @@
   }
 }
 
+input[type="text"] {
+  @include input-field;
+  border: 1px solid #999;
+  &:focus {
+    border: 2px solid #ff9900;
+    outline: 0;
+  }
+}
 
 .create-btn {
   @include btn;
