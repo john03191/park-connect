@@ -7,8 +7,8 @@
       .menber-list__left__member
         %h6 Menber：LIST
         .menber-list__left__member__name
-        - @group.users.each do |user|
-          %p= user.name
+          - @group.users.each do |user|
+            %p= user.name
     .main-header__right__btn
       = link_to edit_group_path(@group.id) do
         = "Park name edit"
