@@ -16,27 +16,27 @@
   %h5 〜オススメの公園〜
   .main--contents
     .main--contets__content
-      %p 鞍ケ池公園
+      %p= link_to "鞍ケ池公園", kuragaike_index_path
       .main--contets__content__img
         = image_tag "park/toyota1.jpg", alt: "鞍ケ池"
 
     .main--contets__content
-      %p 交通安全学習センター
+      %p= link_to "交通安全学習センター", koutu_index_path
       .main--contets__content__img
         = image_tag "park/toyota2.jpg", alt: "交通安全"
 
     .main--contets__content
-      %p 半田市運動公園
+      %p= link_to "半田市運動公園", handa_index_path
       .main--contets__content__img
         = image_tag "park/handa1.jpg", alt: "半田運動公園"
 
     .main--contets__content
-      %p 堀内公園
+      %p= link_to "堀内公園", horiuti_index_path
       .main--contets__content__img
         = image_tag "park/anjyou1.jpg", alt: "堀内公園"
 
     .main--contets__content
-      %p 安城デンパーク
+      %p= link_to "安城デンパーク", denpa_index_path
       .main--contets__content__img
         = image_tag "park/anjyou2.jpg", alt: "安城デンパーク"
 

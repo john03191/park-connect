@@ -29,5 +29,6 @@
           -else
             = link_to "新規登録", new_user_registration_path, class:"header__list__right__login"
             = link_to "ログイン", user_session_path, class:"header__list__right__login"
-    = render 'layouts/notifications'
+      = render 'layouts/notifications'
     = yield
+    %script{:async => "", :defer => "defer", :src => "https://maps.googleapis.com/maps/api/js?key=#{ENV["GOOGLE_MAP_KEY"]}&callback=initMap"}

@@ -67,26 +67,50 @@ a {
   height: 500px;
   overflow: scroll;
   .message {
-    background-color: rgba( 245, 245, 245, 0.8);
-    padding: 35px 10px 12px 20px;
-    .upper-message {
+    width: 100%;
+    margin: 1.5em 0;
+    overflow: hidden;
+    .faceicon {
+      float: left;
+      margin-right: -90px;
+      width: 80px;
+      img {
+        width: 100%;
+        height: auto;
+        border: solid 3px #d7ebfe;
+        border-radius: 50%;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        color: whitesmoke;
+        text-shadow: #FC0 1px 0 10px;
+      }
+    }
+    .chatting {
+      width: 100%;
       display: flex;
-    }
-    .upper-message__user-name {
-      margin-right: 5px;
-      font-weight: bold;
-      font-size: 16px;
-      color: $safe_color;
-      padding: 0 5px;
-    }
-    .upper-message__date {
-      font-size: 12px;
-    }
-  }
-  .lower-message {
-    p {
-      font-size: 14px;
-      color: $black;
+      &__says {
+        display: inline-block;
+        position: relative; 
+        margin: 5px 0 0 105px;
+        padding: 17px 13px;
+        border-radius: 12px;
+        background: #d7ebfe;
+        &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 18px; 
+          left: -24px;
+          border: 12px solid transparent;
+          border-right: 12px solid #d7ebfe;
+        }
+      }
+      .message__date {
+        margin-left: 10px;
+        color: white;
+      }
     }
   }
 }

@@ -89,6 +89,7 @@ li {
 }
 
 .chat-group-user {
+  position: relative;
   padding: 0 15px;
   line-height: 50px;
   font-size: 14px;
@@ -99,6 +100,7 @@ li {
     display: block;
   }
   &__name {
+    font-size: 1.5em;
     float: left;
   }
   &__btn {
@@ -107,8 +109,12 @@ li {
     cursor: pointer;
     &--add {
       color: #38aef0;
+      position: absolute;
+      right: 90px;
     }
     &--remove {
+      position: absolute;
+      right: 90px;
       color: #f05050;
     }
   }

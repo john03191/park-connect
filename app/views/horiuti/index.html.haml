@@ -1,0 +1,22 @@
+.park--show
+  .park--show__title
+    = link_to "堀内公園", user_session_path
+    %p 池には亀がターっくさん♫
+  .park--show__info
+    .park--show__info__title
+      %p Introduction image
+      .park--show__info__image
+        = image_tag "park/anjyou1.jpg", alt: "堀内公園"
+        = image_tag "park-info/horiuti1.jpg", alt: "堀内公園"
+        = image_tag "park-info/horiuti2.jpg", alt: "堀内公園"
+        = image_tag "park-info/horiuti3.jpg", alt: "堀内公園"
+        = image_tag "park-info/horiuti4.jpg", alt: "堀内公園"
+    .park--show__info__subTitle
+      %p Location map
+      .park--show__info__map
+        #horiuti-map
+  .park--show__text
+    = image_tag "tlogon.png"
+    = image_tag "sdgs.png"
+    .park--show__text__link
+      %a{:href => "https://www.city.toyota.aichi.jp/shisetsu/sports/kouen/1007430/1006166.html", target:"_blank"}豊田市HPへのリンクはこちら

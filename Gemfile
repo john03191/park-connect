@@ -60,6 +60,10 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'jquery-rails'
 gem 'fog-aws'
+gem "dotenv-rails"
+gem 'dotenv'
+gem "geocoder"
+gem "gon"
 
 group :production do
   gem 'unicorn', '5.4.1'

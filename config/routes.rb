@@ -8,4 +8,10 @@ Rails.application.routes.draw do
       resources :messages, only: :index, defaults: { format: 'json' }
     end
   end
+  resources :shibahu, only: :index
+  resources :kuragaike, only: :index
+  resources :koutu, only: :index
+  resources :handa, only: :index
+  resources :horiuti, only: :index
+  resources :denpa, only: :index
 end

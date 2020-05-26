@@ -21,6 +21,10 @@
         -# = f.collection_select :user_ids, group.users, :id, :name
         -# グループに所属しているユーザーをセレクトボックスに表示
 
+        -# = f.collection_select :user_ids, User.where.not(id: group.users.pluck(:id)), :id, :name
+        -# = f.submit "Save", class: "create-btn"
+        -# グループに所属していないユーザーを表示
+
         .chat-group-form__search.clearfix
           %input#user-search-field.chat-group-form__input{:placeholder => "追加したいユーザー名を入力してください", :type => "text"}/
         #user-search-result

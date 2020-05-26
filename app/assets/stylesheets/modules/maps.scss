@@ -1,0 +1,86 @@
+.park--show {
+  width: 100%;
+  height: 750px;
+  margin-top: 75px;
+  background-image: url(green.jpg);
+  background-size: cover;
+  background-position: center;
+  &__title {
+    margin: 5px;
+    display: flex;
+    & a {
+      @include title;
+      text-shadow: #FC0 1px 0 10px;
+      color: whitesmoke;
+      font-size: 50px;
+      text-align: left;
+      font-weight: 600;
+    }
+    & p {
+      margin: auto 20px;
+      font-size: 2em;
+      color: white;
+      font-weight: 600;
+    }
+  }
+  &__info {
+    display: flex;
+    padding: 10px;
+    &__title {
+      text-align: center;
+      @include font-bold;
+      margin-right: 10px;
+      width: calc(100% - 400px);
+      p {
+        font-size: 2em;
+      }
+    }
+    &__image {
+      height: 400px;
+      display: flex;
+      overflow: scroll;
+      & img {
+        border: solid darkolivegreen 3px;
+        width: 30em;
+        height: 100%;
+      }
+    }
+    &__subTitle {
+      width: 400px;
+      text-align: center;
+      @include font-bold;
+      p {
+        font-size: 2em;
+      }
+    }
+    &__map {
+      #kuragaike-map {
+        height:400px;
+        border: solid darkolivegreen 3px;
+        text-shadow: none;
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    margin: 10px;
+    &__link {
+      width: 30%;
+      margin: 0 10px;
+      text-align: center;
+      border: solid 2px #d27d00;
+      border-radius: 30px;
+      font-weight: bold;
+      height: 60px;
+      line-height: 60px;
+      background-color: whitesmoke;
+      &:hover {
+        background-color: rgba(255, 105, 180, 0.7);
+        a {
+          display: block;
+          color: white;
+        }
+      }
+    }
+  }
+}
