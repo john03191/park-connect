@@ -3,40 +3,39 @@ $(function() {
   function buildHTML(message)  {
     if ( message.image ) {
       let html =
-        `<div class="message" data-message-id=${message.id}>
-          <div class="upper-message">
-            <div class="upper-message__user-name">
-              ${message.user_name}
+          `<div class='message' data-message-id=${message.id}>
+            <div class='faceicon'>
+              <p>${message.user_name}</p>
             </div>
-            <div class="upper-message__date">
-              ${message.created_at}
+            <div class='chatting'>
+              <div class='chatting__says'>
+                <p class="lower-message__content">
+                ${message.content}
+                </p>
+                <img src=${message.image} >
+              </div>
+              <div class='message__date'>
+                ${message.created_at}
+              </div>
             </div>
-          </div>
-          <div class="lower-message">
-            <p class="lower-message__content">
-              ${message.content}
-            </p>
-          </div>
-          <img src=${message.image} >
-        </div>`
+          </div>`        
       return html;
     } else {
       let html =
-        `<div class="message" data-message-id=${message.id}>
-          <div class="upper-message">
-            <div class="upper-message__user-name">
-              ${message.user_name}
-            </div>
-            <div class="upper-message__date">
-              ${message.created_at}
-            </div>
-          </div>
-          <div class="lower-message">
-            <p class="lower-message__content">
-              ${message.content}
-            </p>
-          </div>
-        </div>`
+      `<div class='message' data-message-id=${message.id}>
+      <div class='faceicon'>
+      <img src="images/prof.png" alt: "user-image">
+        <p>${message.user_name}</p>
+      </div>
+      <div class='chatting'>
+        <div class='chatting__says'>
+          ${message.content}
+        </div>
+        <div class='message__date'>
+          ${message.created_at}
+        </div>
+      </div>
+    </div>`
       return html;
     };
   }

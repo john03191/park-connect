@@ -10,3 +10,13 @@
           = f.email_field :email
       .actions
         = f.submit "Update", class: 'create-btn'
+
+    -# = form_for(@user) do |f|
+    -#   - if @user.image?
+    -#     = image_tag @user.image.url
+    -#   - else
+    -#     = image_tag "/images/icon/no-image.png", :size => '100x100'
+    -#     -# = image_tag "/assets/default.jpg", :size => '100x100'
+    -#     = f.file_field :image, accept: 'image/jpeg,image/gif,image/png'
+    -#     =f.submit '更新する', class: 'btn btn-primary'
+        

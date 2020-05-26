@@ -58,3 +58,9 @@
   background-size: cover;
   background-position: center; 
 }
+
+@mixin font-bold {
+  color: #f0f8ff;
+  text-shadow: #FC0 1px 0 10px;
+  font-weight: bold;
+}
