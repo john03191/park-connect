@@ -5,6 +5,7 @@
     %title Park Connect
     = favicon_link_tag('favicon.ico')
     = csrf_meta_tags
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   %body
@@ -18,7 +19,7 @@
           -if user_signed_in?
             .header__list__right__userName
               %p ユーザーネーム：
-              = image_tag "prof.png", alt: "user-image"
+              = image_tag "default.jpeg", alt: "user-image"
               -# %img{:src => "/user_images/#{@user.image_name}"}/
               
               %p= current_user.name

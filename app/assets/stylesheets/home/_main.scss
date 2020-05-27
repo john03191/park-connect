@@ -73,6 +73,21 @@ h5 {
   }
 }
 
+.main--contents__map {
+  background-image: url(green.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba( 0, 100, 0, 0.6);
+  padding: 10px;
+  #g-map {
+    margin: 0 auto;
+    width: 90%;
+    height: 500px;
+    border: solid darkolivegreen 3px;
+    text-shadow: none;
+  }
+}
+
 .info-img {
   background-image: url(prof-image.jpg);
   background-size: cover;

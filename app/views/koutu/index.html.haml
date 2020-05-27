@@ -3,20 +3,22 @@
     = link_to "交通安全学習センター", user_session_path
     %p ゴーカートや汽車に50円で乗れますよ
   .park--show__info
-    .park--show__info__title
-      %p Introduction image
-      .park--show__info__image
-        = image_tag "park/toyota2.jpg", alt: "交通安全学習センター"
-        = image_tag "park-info/koutu1.jpg", alt: "交通安全学習センター"
-        = image_tag "park-info/koutu2.jpeg", alt: "交通安全学習センター"
-        = image_tag "park-info/koutu3.jpg", alt: "交通安全学習センター"
-        = image_tag "park-info/koutu4.jpg", alt: "交通安全学習センター"
-    .park--show__info__subTitle
-      %p Location map
-      .park--show__info__map
-        #koutu-map
-  .park--show__text
-    = image_tag "tlogon.png"
-    = image_tag "sdgs.png"
-    .park--show__text__link
-      %a{:href => "https://www.city.toyota.aichi.jp/shisetsu/sports/kouen/1007430/1006166.html", target:"_blank"}豊田市HPへのリンクはこちら
+    .park--show__info__thumbnail
+      %ul
+        %li
+          %a.modal{:href => "park/toyota2.jpg"}
+            = image_tag "park/toyota2.jpg", alt: "交通安全学習センター"
+        %li
+          %a.modal{:href => "park-info/koutu1.jpeg"}
+            = image_tag "park-info/koutu1.jpeg", alt: "交通安全学習センター"
+        %li
+          %a.modal{:href => "park-info/koutu2.jpeg"}
+            = image_tag "park-info/koutu2.jpeg", alt: "交通安全学習センター"
+        %li
+          %a.modal{:href => "park-info/koutu3.jpg"}
+            = image_tag "park-info/koutu3.jpg", alt: "交通安全学習センター"
+        %li
+          %a.modal{:href => "park-info/koutu4.jpg"}
+            = image_tag "park-info/koutu4.jpg", alt: "交通安全学習センター"
+    .park--show__info__main
+      = image_tag "park/toyota2.jpg", alt: "交通安全学習センター"

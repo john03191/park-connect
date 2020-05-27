@@ -3,20 +3,22 @@
     = link_to "半田市運動公園", user_session_path
     %p BBQもできるし水遊びもできてなんと無料！
   .park--show__info
-    .park--show__info__title
-      %p Introduction image
-      .park--show__info__image
-        = image_tag "park/handa1.jpg", alt: "半田市運動公園"
-        = image_tag "park-info/handa1.jpg", alt: "半田市運動公園"
-        = image_tag "park-info/handa2.jpg", alt: "半田市運動公園"
-        = image_tag "park-info/handa3.jpg", alt: "半田市運動公園"
-        = image_tag "park-info/handa4.jpg", alt: "半田市運動公園"
-    .park--show__info__subTitle
-      %p Location map
-      .park--show__info__map
-        #handa-map
-  .park--show__text
-    = image_tag "tlogon.png"
-    = image_tag "sdgs.png"
-    .park--show__text__link
-      %a{:href => "https://www.city.toyota.aichi.jp/shisetsu/sports/kouen/1007430/1006166.html", target:"_blank"}豊田市HPへのリンクはこちら
+    .park--show__info__thumbnail
+      %ul
+        %li
+          %a.modal{:href => "park/handa1.jpg"}
+            = image_tag "park/handa1.jpg", alt: "半田市運動公園"
+        %li
+          %a.modal{:href => "park-info/handa1.jpeg"}
+            = image_tag "park-info/handa1.jpeg", alt: "半田市運動公園"
+        %li
+          %a.modal{:href => "park-info/handa2.jpeg"}
+            = image_tag "park-info/handa2.jpeg", alt: "半田市運動公園"
+        %li
+          %a.modal{:href => "park-info/handa3.jpg"}
+            = image_tag "park-info/handa3.jpg", alt: "半田市運動公園"
+        %li
+          %a.modal{:href => "park-info/handa4.jpg"}
+            = image_tag "park-info/handa4.jpg", alt: "半田市運動公園"
+    .park--show__info__main
+      = image_tag "park/handa1.jpg", alt: "半田市運動公園"
