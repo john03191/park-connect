@@ -3,20 +3,22 @@
     = link_to "安城デンパーク", user_session_path
     %p 大きな遊具にイベント盛り沢山
   .park--show__info
-    .park--show__info__title
-      %p Introduction image
-      .park--show__info__image
-        = image_tag "park/anjyou2.jpg", alt: "安城デンパーク"
-        = image_tag "park-info/denpa1.jpeg", alt: "安城デンパーク"
-        = image_tag "park-info/denpa2.jpg", alt: "安城デンパーク"
-        = image_tag "park-info/denpa3.jpg", alt: "安城デンパーク"
-        = image_tag "park-info/denpa4.jpg", alt: "安城デンパーク"
-    .park--show__info__subTitle
-      %p Location map
-      .park--show__info__map
-        #horiuti-map
-  .park--show__text
-    = image_tag "tlogon.png"
-    = image_tag "sdgs.png"
-    .park--show__text__link
-      %a{:href => "https://www.city.toyota.aichi.jp/shisetsu/sports/kouen/1007430/1006166.html", target:"_blank"}豊田市HPへのリンクはこちら
+    .park--show__info__thumbnail
+      %ul
+        %li
+          %a.modal{:href => "park/anjyou2.jpg"}
+            = image_tag "park/anjyou2.jpg", alt: "安城デンパーク"
+        %li
+          %a.modal{:href => "park-info/denpa1.jpeg"}
+            = image_tag "park-info/denpa1.jpeg", alt: "安城デンパーク"
+        %li
+          %a.modal{:href => "park-info/denpa2.jpeg"}
+            = image_tag "park-info/denpa2.jpeg", alt: "安城デンパーク"
+        %li
+          %a.modal{:href => "park-info/denpa3.jpg"}
+            = image_tag "park-info/denpa3.jpg", alt: "安城デンパーク"
+        %li
+          %a.modal{:href => "park-info/denpa4.jpg"}
+            = image_tag "park-info/denpa4.jpg", alt: "安城デンパーク"
+    .park--show__info__main
+      = image_tag "park/anjyou2.jpg", alt: "安城デンパーク"

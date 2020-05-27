@@ -8,7 +8,7 @@
       -if user_signed_in?
         .header__list__right__userName
           %p ユーザーネーム：
-          = image_tag "prof.png", alt: "user-image"
+          = image_tag "default.jpeg", alt: "user-image"
           -# %img{:src => "/user_images/#{@user.image_name}"}/
           
           %p= current_user.name

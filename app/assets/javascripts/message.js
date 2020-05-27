@@ -24,7 +24,6 @@ $(function() {
       let html =
       `<div class='message' data-message-id=${message.id}>
       <div class='faceicon'>
-      <img src="images/prof.png" alt: "user-image">
         <p>${message.user_name}</p>
       </div>
       <div class='chatting'>
