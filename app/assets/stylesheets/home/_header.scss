@@ -40,14 +40,6 @@ a {
     padding: 0 20px;
     line-height: 75px;
     &__userName {
-      align-items: center;
-      & img {
-        height: 30px;
-        width: 30px;
-        margin: 0 10px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
       display: flex;
       padding: 0 10px;
       margin-right: 10px;

@@ -18,10 +18,7 @@
         .header__list__right
           -if user_signed_in?
             .header__list__right__userName
-              %p ユーザーネーム：
-              = image_tag "default.jpeg", alt: "user-image"
-              -# %img{:src => "/user_images/#{@user.image_name}"}/
-              
+              %p ユーザーネーム：              
               %p= current_user.name
               = link_to edit_user_path(current_user) do
                 = icon('fas', 'cog', class: 'icon')
