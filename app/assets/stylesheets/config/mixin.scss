@@ -54,7 +54,7 @@
 }
 
 @mixin background-image {
-  background-image: url(green.jpg);
+  background-image: image-url('green.jpg');
   background-size: cover;
   background-position: center; 
 }
