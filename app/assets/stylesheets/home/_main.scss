@@ -74,7 +74,7 @@ h5 {
 }
 
 .main--contents__map {
-  background-image: url(green.jpg);
+  background-image: image-url('green.jpg');
   background-size: cover;
   background-position: center;
   background-color: rgba( 0, 100, 0, 0.6);
@@ -89,7 +89,7 @@ h5 {
 }
 
 .info-img {
-  background-image: url(prof-image.jpg);
+  background-image: image-url('prof-image.jpg');
   background-size: cover;
   background-position: center;
   height: 300px;

@@ -19,7 +19,7 @@ a {
     height: 200px;
     width: 200px;
     font-weight: bold;
-    background-image: url(flower.jpg);
+    background-image: image-url('flower.jpg');
     position: relative;
     border-radius: 10px;
     &__name__edit {
