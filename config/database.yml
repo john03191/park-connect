@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: park-connect_production
-  username: park-connect
-  password: <%= ENV['PARK-CONNECT_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
