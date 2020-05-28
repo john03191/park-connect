@@ -69,7 +69,7 @@ gem "dotenv-rails"
 gem 'dotenv'
 gem "geocoder"
 gem "gon"
-
+gem 'fog-aws'
 group :production do
   gem 'unicorn', '5.4.1'
 end
