@@ -8,7 +8,6 @@ class User < ApplicationRecord
     return nil if input == ""
     User.where(['name LIKE ?', "%#{input}%"] ).where.not(id: id).limit(10)
   end
-  # mount_uploader :image, ImageUploader
 
   has_many :group_users
   has_many :groups, through: :group_users
