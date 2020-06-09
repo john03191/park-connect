@@ -1,0 +1,16 @@
+.login-title
+  %h2 Create Park
+  #account-page.account-page
+    = form_for @post do |f|
+      .field
+        .field-input__name
+          = f.text_field :title, autofocus: true, placeholder: '公園の名前を入力してください', class: "search-box__text"
+          .form__mask
+            = f.label :image, class: 'form__mask__image' do
+              = icon('far', 'image fa-1g', class: 'icon')
+              = f.file_field :image, class: 'hidden'
+      .field
+        .field-input
+          = f.text_field :text, placeholder: '紹介文を入力して下さい'
+      .actions
+        = f.submit "Create", class: 'create-btn'
