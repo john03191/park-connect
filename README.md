@@ -4,13 +4,13 @@
 ★アプリ名：park-connect
 
 ★仕様
-  ・基本のdevise機能
-  ・グループチャット
-  ・非同期通信(Ajax)
-  ・ゲストログイン機能
-  ・GoogleMap表示機能
-  ・インクリメンタルサーチ
-  ・自動更新
+>・基本のdevise機能
+・グループチャット
+・非同期通信(Ajax)
+・ゲストログイン機能
+・GoogleMap表示機能
+・インクリメンタルサーチ
+・自動更新
 
 ★本番環境(デプロイ先 IPアドレス：http://18.176.98.234/)
 
@@ -24,17 +24,20 @@
 
 ★DEMO
 TOPページ
-https://gyazo.com/faced023cf72e8fe8d4bca8ba67b0d98
+> https://gyazo.com/faced023cf72e8fe8d4bca8ba67b0d98
+
 チャットページ
-https://gyazo.com/f1b4088398a075a5d7b6be494453a296
+> https://gyazo.com/f1b4088398a075a5d7b6be494453a296
+
 ゲストログイン機能
-https://gyazo.com/589b2123846f4b31df6243e773dad3e5
+> https://gyazo.com/589b2123846f4b31df6243e773dad3e5
 
 ★工夫したポイント
-・チャットにするために非同期通信（Ajax）と自動更新機能を実装しました。
-・閲覧しやすくするためにゲストログイン機能を搭載しました。
+> チャットにするために非同期通信（Ajax）と自動更新機能を実装しました。
+> 閲覧しやすくするためにゲストログイン機能を搭載しました。
 
 ★使用技術
+
 使用言語：haml/scss/Ruby/Ruby on Rails/JavaScript/jQuery/MySQL/GitHub/VScode
 
 ★課題や今後実装したい機能
