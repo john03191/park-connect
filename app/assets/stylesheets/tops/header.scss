@@ -1,0 +1,37 @@
+nav {
+  .navbar-header {
+    width: 100%;
+    button, .navbar-brand {
+      transition: opacity 0.15s;
+    }
+    button {
+      margin-right: 0;
+    }
+    button:hover, .navbar-brand:hover {
+      opacity: 0.8;
+    }
+  }
+  .navbar-name {
+    display: flex;
+    line-height: 50px;
+    color: white;
+    font-weight: 600;
+  }
+  .navbar-nav {
+    line-height: 50px;
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+  .navbar-btn {
+    margin-right: 15px;
+  }
+}
+
+.navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
+  background-color: rgb( 0, 100, 0);
+  border: none;
+  a {
+    color: white !important;
+  }
+}

@@ -1,0 +1,24 @@
+.toppage-image {
+  height: 100vh;
+  width: 100%;
+  background-image: image-url('green.jpg');
+  background-size: cover;
+  background-position: center;
+  background-image: image-url("green.jpg");
+  .app-info {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    &__left {
+      @include app-info;
+    }
+    &__right {
+      @include app-info;
+    }
+  }
+}

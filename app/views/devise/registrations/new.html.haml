@@ -5,20 +5,16 @@
       = devise_error_messages!
       .field
         .field-input__name
-          = f.text_field :name, autofocus: true, placeholder: 'お名前', class: "search-box__text"
-          .form__mask
-            = f.label :image, class: 'form__mask__image' do
-              = icon('far', 'image fa-1g', class: 'icon')
-              = f.file_field :image, class: 'hidden'
+          = f.text_field :name, autofocus: true, placeholder: 'お名前', class: "search-box__text", required:"required"
       .field
         .field-input
-          = f.email_field :email, placeholder: 'E-Mail'
+          = f.email_field :email, placeholder: 'E-Mail', required:"required"
       .field
         .field-input
-          = f.password_field :password, autocomplete: "off", placeholder: 'Password(英数字8文字以上)'
+          = f.password_field :password, autocomplete: "off", placeholder: 'Password(英数字8文字以上)', required:"required"
       .field
         .field-input
-          = f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Password(英数字8文字以上)'
+          = f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Password(英数字8文字以上)', required:"required"
 
       .actions
         = f.submit "Create Account", class: 'create-btn'
