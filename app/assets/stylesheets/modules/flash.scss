@@ -2,7 +2,7 @@
   .notice {
     color: $white;
     text-align: center;
-    background-color: rgb( 0, 100, 0);
+    background-color: orange;
     z-index: 11;
   }
   
@@ -10,5 +10,6 @@
     background-color: rgb(241, 92, 234);
     text-align: center;
     z-index: 11;
+    margin-bottom: 0px;
   }
 }

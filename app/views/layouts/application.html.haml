@@ -7,27 +7,10 @@
     = csrf_meta_tags
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     = stylesheet_link_tag    'application', media: 'all'
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"}
     = javascript_include_tag 'application'
   %body
-    .header
-      .header-in
-        .header-in__title
-          = link_to "Connected Park",root_path
-          .header-in--subtitle
-            %p オススメ公園を分かち合うオンラインプラットフォーム
-        .header__list__right
-          -if user_signed_in?
-            .header__list__right__userName
-              %p ユーザーネーム：              
-              %p= current_user.name
-              = link_to edit_user_path(current_user) do
-                = icon('fas', 'cog', class: 'icon')
-            .header__list__right__login
-              = link_to "ログアウト", destroy_user_session_path	, method: :delete
-          -else
-            = link_to "ゲストログイン（閲覧用）", home_guest_sign_in_path, method: :post, class:"header__list__right__login"
-            = link_to "新規登録", new_user_registration_path, class:"header__list__right__login"
-            = link_to "ログイン", user_session_path, class:"header__list__right__login"
-      = render 'layouts/notifications'
+    = render 'layouts/notifications'
+    = render 'tops/navbar'
     = yield
     %script{:async => "", :defer => "defer", :src => "https://maps.googleapis.com/maps/api/js?key=#{ENV["GOOGLE_MAP_KEY"]}&callback=initMap"}
