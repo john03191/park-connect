@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :set_post, only: [:show, :edit, :update]
   before_action :move_to_index, except: [:index, :show]
 
   def index
@@ -17,9 +18,26 @@ class PostsController < ApplicationController
       redirect_to new_post_path, notice: '作成に失敗しました'
     end
   end
-
+  
   def show
-    @post = Post.find(params[:id])
+  end
+  
+  def edit
+  end
+
+  def update
+    @post.update(post_params)
+    if @post.save
+      redirect_to posts_path, notice: '公園を編集しました'
+    else
+      redirect_to edit_post_path, notice: '編集に失敗しました'
+    end
+  end
+
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
+    redirect_to posts_path
   end
 
   private
@@ -29,6 +47,10 @@ class PostsController < ApplicationController
 
   def move_to_index
     redirect_to new_user_session_path unless user_signed_in?
+  end
+
+  def set_post
+    @post = Post.find(params[:id])
   end
 
 end

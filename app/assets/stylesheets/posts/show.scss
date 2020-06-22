@@ -1,0 +1,59 @@
+.main-contents__info {
+  padding-top: 40px;
+}
+.show-main {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  &__page {
+    padding: 30px 100px 20px 100px;
+    border-radius: 8px;
+    background-color: rgba( 0, 100, 0, 0.8);
+    &__title {
+      color: white;
+      font-size: 18px;
+      p {
+        @include font-bold;
+        font-size: 20px;
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: space-around;
+      &__text {
+        width: 48%;
+        margin-right: 10px;
+        background-color: whitesmoke;
+        border: solid 1px lightgrey;
+        .post__info__text {
+          font-size: 16px;
+          padding: 10px;
+          font-weight: bold;
+          border-bottom: 1px solid gray;
+        }
+      }
+      &__image {
+        width: 48%;
+        border: 3px solid olivedrab;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &__btn {
+      display: flex;
+      justify-content: space-around;
+      &__ed {
+        @include btn;
+        margin-top: 20px;
+        background-color: whitesmoke;
+        width: 200px;
+        &:hover {
+          background-color: rgba( 0, 100, 0, 0.8);
+          color: white;
+        }
+      }
+    }
+  }
+}
