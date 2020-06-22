@@ -1,0 +1,33 @@
+.main-contents__info
+  .main-contents__info__content
+    .main-contents__info__content__title
+      %h5 公園情報投稿
+      = link_to "新規投稿", new_post_path, class:"new-post"
+    .main--contents__map
+      #g-map
+  .main--contents
+    - @posts.each do |post|
+      .main--contets__content
+        %p=post.title
+        .main--contets__content__img
+          = image_tag post.image.to_s
+
+    .main--contets__content
+      %p 交通安全学習センター
+      .main--contets__content__img
+        = image_tag "park/toyota2.jpg", alt: "交通安全"
+
+    .main--contets__content
+      %p 半田市運動公園
+      .main--contets__content__img
+        = image_tag "park/handa1.jpg", alt: "半田運動公園"
+
+    .main--contets__content
+      %p 堀内公園
+      .main--contets__content__img
+        = image_tag "park/anjyou1.jpg", alt: "堀内公園"
+
+    .main--contets__content
+      %p 安城デンパーク
+      .main--contets__content__img
+        = image_tag "park/anjyou2.jpg", alt: "安城デンパーク"

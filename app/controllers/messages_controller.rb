@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   before_action :set_group
 
   def index
-    @groups = Group.all
+    @groups = Group.all.order(id: "DESC")
     @message = Message.new
     @messages = @group.messages.includes(:user)
   end
