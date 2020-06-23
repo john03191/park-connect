@@ -1,0 +1,14 @@
+.main-contents__info
+  .main-contents__info__content
+    .main-contents__info__content__title
+      %h5 公園情報投稿
+      = link_to "新規投稿", new_post_path, class:"new-post"
+    .main--contents__map
+      #g-map
+  .main--contents
+    - @posts.each do |post|
+      .main--contets__content
+        %p=post.title
+        .main--contets__content__img
+          = link_to "/posts/#{post.id}" do
+            = image_tag post.image.to_s, alt:"" 

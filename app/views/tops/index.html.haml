@@ -2,8 +2,9 @@
   .app-info
     .app-info__left
       チャットアプリ
-      = link_to user_session_path, class: "app-info__left__image" do
+      = link_to groups_path, class: "app-info__left__image" do
         = image_tag 'app1.png'
     .app-info__right
       ブログアプリ
-      .app-info__right__image
+      = link_to posts_path, class: "app-info__left__image" do
+        = image_tag 'app2.png'

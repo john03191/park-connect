@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
-
+  before_action :move_to_index
   def index
-    @groups = Group.all
+    @groups = Group.order(id: "DESC")
   end
   
   def new
@@ -31,9 +31,19 @@ class GroupsController < ApplicationController
     end
   end
 
+  def destroy
+    group = Group.find(params[:id])
+    group.destroy
+    redirect_to groups_path
+  end
+
   private
   def group_params
     params.require(:group).permit(:name, user_ids: [])
+  end
+
+  def move_to_index
+    redirect_to new_user_session_path unless user_signed_in?
   end
 
 end

@@ -4,13 +4,14 @@
     = form_for @post do |f|
       .field
         .field-input__name
-          = f.text_field :title, autofocus: true, placeholder: '公園の名前を入力してください', class: "search-box__text"
-          .form__mask
-            = f.label :image, class: 'form__mask__image' do
-              = icon('far', 'image fa-1g', class: 'icon')
-              = f.file_field :image, class: 'hidden'
+          = f.text_field :title, autofocus: true, placeholder: '公園の名前を入力してください', class: "search-box__text", required:"required"
+      .field
+        .form-group 
+          .image_form
+            .image_form__contents
+              = f.text_field :image, class: 'image_form__contents__field hidden_file', placeholder: 'URLを入力して下さい'
       .field
         .field-input
-          = f.text_field :text, placeholder: '紹介文を入力して下さい'
+          = f.text_area :text, placeholder: '紹介文を入力して下さい', class: "post__info", required:"required", cols:100,rows:5
       .actions
         = f.submit "Create", class: 'create-btn'

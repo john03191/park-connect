@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20200601183323) do
     t.string   "title"
     t.string   "text"
     t.text     "image",      limit: 65535
+    t.integer  "user_id"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end

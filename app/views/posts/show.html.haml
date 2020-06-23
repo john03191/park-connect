@@ -1,0 +1,23 @@
+.main-contents__info
+  .show-main
+    .show-main__page
+      .show-main__page__title
+        %p=@post.title
+      .show-main__page__info
+        .show-main__page__info__text
+          %p.post__info__text【紹介文】
+          =@post.text
+        .show-main__page__info__image
+          = image_tag @post.image.to_s, alt:"" 
+      - if current_user.id == @post.user_id
+        .show-main__page__btn
+          .show-main__page__btn__ed
+            =link_to "戻る", posts_path
+          .show-main__page__btn__ed
+            =link_to "編集", edit_post_path
+          .show-main__page__btn__ed
+            = link_to "削除", "/posts/#{@post.id}", method: :delete, id:"delete__btn"
+      - else
+        .show-main__page__btn
+          .show-main__page__btn__ed
+            =link_to "戻る", posts_path

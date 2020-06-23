@@ -12,3 +12,4 @@
           .group__name__message
             %p 最新のメッセージ
             %a= group.show_last_message
+          = link_to "削除", "/groups/#{group.id}", method: :delete, id:"delete__btn"
