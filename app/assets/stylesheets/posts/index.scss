@@ -1,5 +1,5 @@
 .main-contents__info {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: image-url('green.jpg');
   background-size: cover;
@@ -52,6 +52,9 @@
   .main--contets__content {
     @include content;
     background-color: rgba( 0, 100, 0, 0.6);
+    &__img {
+      width: 400px;
+    }
     p {
       color: white;
       font-size: 20px;

@@ -7,9 +7,9 @@
           = f.text_field :title, autofocus: true, placeholder: '公園の名前を入力してください', class: "search-box__text", required:"required"
       .field
         .field-input
-          = f.text_area :text, placeholder: '紹介文を入力して下さい', class: "post__info", required:"required", cols:100,rows:5
+          = f.text_field :image, placeholder: '画像のURLを入力してください', required:"required"
       .field
         .field-input
-          = f.text_field :image, placeholder: '画像のURLを入力してください', required:"required"
+          = f.text_area :text, placeholder: '紹介文を入力して下さい', class: "post__info", required:"required", cols:100,rows:5
       .actions
         = f.submit "Create", class: 'create-btn'
